@@ -22,6 +22,7 @@ module.exports.policies = {
 
   UserController: {
       login: true,
+      create: true,
       '*': 'currentUser'
     }
 
