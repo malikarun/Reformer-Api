@@ -18,13 +18,15 @@ module.exports.policies = {
 
   // Default policy for all controllers and actions
   // (`true` allows public access)
-  '*': true,
+  '*': "authenticated",
 
   UserController: {
-      login: true,
-      create: true,
-      '*': 'currentUser'
-    }
+    "create": true,
+  },
+
+  AuthController: {
+    '*': true,
+  }
 
 	// Here's an example of mapping some policies to run before
   // a controller and its actions

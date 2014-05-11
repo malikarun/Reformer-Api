@@ -26,6 +26,12 @@ module.exports =
       type: "string"
       required: true
 
+  #Override toJSON method to remove password from API
+  toJSON: ->
+    obj = @toObject()
+    delete obj.password
+    obj
+
   beforeCreate: (attrs, next) ->
     bcrypt = require("bcrypt")
     bcrypt.genSalt 10, (err, salt) ->
