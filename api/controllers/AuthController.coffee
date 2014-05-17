@@ -10,12 +10,11 @@ module.exports =
   process: (req, res) ->
     passport.authenticate("local", (err, user, info) ->
       if (err) or (not user)
-        res.redirect "#login"
+        res.send 403, message: 'HAHA NOT FOUND'
         return
       req.logIn user, (err) ->
-        res.redirect "#login"  if err
-        res.redirect "/"
-      return
+        return res.send 500, message: 'Something wend wrong'  if err
+        return res.send 200, message: 'Authenticated'
     ) req, res
     return
 

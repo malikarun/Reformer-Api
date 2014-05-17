@@ -9,14 +9,14 @@ bcrypt = require('bcrypt');
 var verifyHandler = function(token, tokenSecret, profile, done) {
   process.nextTick(function() {
 
-    User.findOne({uid: profile.id}, function(err, user) {
+    User.findOne({id: profile.id}, function(err, user) {
       if (user) {
         return done(null, user);
       } else {
 
         var data = {
           provider: profile.provider,
-          uid: profile.id,
+          id: profile.id,
           name: profile.displayName
         };
 
@@ -39,11 +39,11 @@ var verifyHandler = function(token, tokenSecret, profile, done) {
 };
 
 passport.serializeUser(function(user, done) {
-  done(null, user.uid);
+  done(null, user[0].id);
 });
 
-passport.deserializeUser(function(uid, done) {
-  User.findOne({uid: uid}, function(err, user) {
+passport.deserializeUser(function(id, done) {
+  User.findOne({id: id}, function(err, user) {
     done(err, user)
   });
 });
@@ -84,7 +84,12 @@ module.exports.express = {
 
     passport.use(new LocalStrategy(
       function(email, password, done) {
-        User.findByEmail(email).done(function(err, user) {
+        console.log("let's find the user")
+        console.log(email)
+        console.log(password)
+        User.findByEmail(email).exec(function(err, user) {
+          console.log('err: '+err)
+          console.log('user: '+user)
           if (err) { return done(null, err); }
           if (!user || user.length < 1) { return done(null, false, { message: 'Incorrect User'}); }
           bcrypt.compare(password, user[0].password, function(err, res) {

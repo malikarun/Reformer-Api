@@ -12,15 +12,14 @@ module.exports =
     lastName:
       type: "string"
 
+    username:
+      type: "string"
+
     email:
       type: "string"
       email: true
       unique: true
       required: true
-
-    username:
-      unique: true
-      type: "string"
 
     password:
       type: "string"

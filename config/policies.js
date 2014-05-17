@@ -22,6 +22,7 @@ module.exports.policies = {
 
   UserController: {
     "create": true,
+
   },
 
   AuthController: {
