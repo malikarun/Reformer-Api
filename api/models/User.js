@@ -6,13 +6,9 @@ User.coffee
 @docs        :: http://sailsjs.org/#!documentation/models
  */
 module.exports = {
+
   attributes: {
-    firstName: {
-      type: "string"
-    },
-    lastName: {
-      type: "string"
-    },
+
     username: {
       type: "string"
     },
@@ -25,14 +21,54 @@ module.exports = {
     password: {
       type: "string",
       required: true
+    },
+
+
+
+    profile: {
+      model: 'profile'
+    },
+    address: {
+      model: 'address'
+    },
+    groups: {
+      collection: 'group',
+      via: 'owner'
+    },
+    ideas: {
+      collection: 'idea',
+      via: 'owner'
+    },
+    discussions: {
+      collection: 'discussion',
+      via: 'owner'
+    },
+    problems: {
+      collection: 'problem',
+      via: 'owner'
+    },
+    solutions: {
+      collection: 'solution',
+      via: 'owner'
+    },
+    achievements: {
+      collection: 'achievement',
+      via: 'owner'
+    },
+    meetings: {
+      collection: 'meeting',
+      via: 'owner'
     }
   },
+
+
   toJSON: function() {
     var obj;
     obj = this.toObject();
     delete obj.password;
     return obj;
   },
+
   beforeCreate: function(attrs, next) {
     var bcrypt;
     bcrypt = require("bcrypt");
