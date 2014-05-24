@@ -22,7 +22,8 @@ module.exports = {
     phoneNumber: {
       type: 'string'
     },
-    user: {
+
+    owner: {
       model: 'user'
     }
   }

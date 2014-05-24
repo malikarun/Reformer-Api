@@ -26,10 +26,12 @@ module.exports = {
 
 
     profile: {
-      model: 'profile'
+      collection: 'profile',
+      via: 'owner'
     },
     address: {
-      model: 'address'
+      collection: 'address',
+      via: 'owner'
     },
     groups: {
       collection: 'group',
