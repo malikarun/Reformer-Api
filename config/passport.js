@@ -84,12 +84,7 @@ module.exports.express = {
 
     passport.use(new LocalStrategy(
       function(email, password, done) {
-        console.log("let's find the user")
-        console.log(email)
-        console.log(password)
         User.findByEmail(email).exec(function(err, user) {
-          console.log('err: '+err)
-          console.log('user: '+user)
           if (err) { return done(null, err); }
           if (!user || user.length < 1) { return done(null, false, { message: 'Incorrect User'}); }
           bcrypt.compare(password, user[0].password, function(err, res) {
