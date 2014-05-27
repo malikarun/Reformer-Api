@@ -8,16 +8,16 @@
 module.exports = {
 
   attributes: {
-    // title: {
-    //   type: "string"
-    // },
+    title: {
+      type: "string"
+    },
 
-    // owner: {
-    //   model: 'user'
-    // },
-    // venue: {
-    //   model: 'venue'
-    // }
+    owner: {
+      model: 'user'
+    },
+    venue: {
+      model: 'venue'
+    }
   }
 };
 

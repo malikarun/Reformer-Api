@@ -8,13 +8,13 @@
 module.exports = {
 
   attributes: {
-  //   title: {
-  //     type: "string"
-  //   },
+    title: {
+      type: "string"
+    },
 
-  //   owner: {
-  //     model: 'user'
-  //   }
+    owner: {
+      model: 'user'
+    }
 
   }
 };

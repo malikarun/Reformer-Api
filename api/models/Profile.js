@@ -7,25 +7,25 @@
 
 module.exports = {
   attributes: {
-    // firstName: {
-    //   type: "string"
-    // },
-    // lastName: {
-    //   type: "string"
-    // },
-    // gender: {
-    //   type: 'string'
-    // },
-    // birthDate: {
-    //   type: 'date'
-    // },
-    // phoneNumber: {
-    //   type: 'string'
-    // },
+    firstName: {
+      type: "string"
+    },
+    lastName: {
+      type: "string"
+    },
+    gender: {
+      type: 'string'
+    },
+    birthDate: {
+      type: 'date'
+    },
+    phoneNumber: {
+      type: 'string'
+    },
 
-    // owner: {
-    //   model: 'user'
-    // }
+    owner: {
+      model: 'user'
+    }
   }
 };
 
