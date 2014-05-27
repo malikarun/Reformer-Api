@@ -8,28 +8,28 @@
 module.exports = {
 
   attributes: {
-    number: {
-      type: "string"
-    },
-    street: {
-      type: 'string'
-    },
-    suburb: {
-      type: 'string'
-    },
-    city: {
-      type: 'string'
-    },
-    state: {
-      type: 'string'
-    },
-    pinCode: {
-      type: 'integer'
-    },
+    // number: {
+    //   type: "string"
+    // },
+    // street: {
+    //   type: 'string'
+    // },
+    // suburb: {
+    //   type: 'string'
+    // },
+    // city: {
+    //   type: 'string'
+    // },
+    // state: {
+    //   type: 'string'
+    // },
+    // pinCode: {
+    //   type: 'integer'
+    // },
 
-    owner: {
-      model: 'meeting'
-    }
+    // owner: {
+    //   model: 'meeting'
+    // }
   }
 };
 

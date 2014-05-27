@@ -25,42 +25,42 @@ module.exports = {
 
 
 
-    profile: {
-      collection: 'profile',
-      via: 'owner'
-    },
-    address: {
-      collection: 'address',
-      via: 'owner'
-    },
-    groups: {
-      collection: 'group',
-      via: 'owner'
-    },
-    ideas: {
-      collection: 'idea',
-      via: 'owner'
-    },
-    discussions: {
-      collection: 'discussion',
-      via: 'owner'
-    },
-    problems: {
-      collection: 'problem',
-      via: 'owner'
-    },
-    solutions: {
-      collection: 'solution',
-      via: 'owner'
-    },
-    achievements: {
-      collection: 'achievement',
-      via: 'owner'
-    },
-    meetings: {
-      collection: 'meeting',
-      via: 'owner'
-    }
+    // profile: {
+    //   collection: 'profile',
+    //   via: 'owner'
+    // },
+    // address: {
+    //   collection: 'address',
+    //   via: 'owner'
+    // },
+    // groups: {
+    //   collection: 'group',
+    //   via: 'owner'
+    // },
+    // ideas: {
+    //   collection: 'idea',
+    //   via: 'owner'
+    // },
+    // discussions: {
+    //   collection: 'discussion',
+    //   via: 'owner'
+    // },
+    // problems: {
+    //   collection: 'problem',
+    //   via: 'owner'
+    // },
+    // solutions: {
+    //   collection: 'solution',
+    //   via: 'owner'
+    // },
+    // achievements: {
+    //   collection: 'achievement',
+    //   via: 'owner'
+    // },
+    // meetings: {
+    //   collection: 'meeting',
+    //   via: 'owner'
+    // }
   },
 
 
