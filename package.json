@@ -24,7 +24,7 @@
     "grunt-contrib-coffee": "*",
     "bcrypt": "*",
     "pg": "^3.2.0",
-    "sails-postgresql": "^0.10.0-rc3"
+    "sails-postgresql": "0.9.7"
   },
   "scripts": {
     "start": "node app.js",
