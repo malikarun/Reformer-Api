@@ -14,4 +14,5 @@ module.exports.models = {
   // (defaults to localDiskDb)
   // connection: 'localDiskDb'
   connection: 'herokuPostgresqlServer'
+  // connection: 'localPostgresqlServer'
 };
