@@ -82,12 +82,11 @@ module.exports.connections = {
 
   herokuPostgresqlServer: {
     adapter: 'sails-postgresql',
-    host: process.env.DB_HOST,// || 'ec2-174-129-197-200.compute-1.amazonaws.com',
-    user: process.env.DB_USER,// || 'cozazqsmgiumnx',
-    port: process.env.DB_PORT,// || 5432,
-    password: process.env.DB_PASSWORD,// || 'yfrPK18kEI6Di_yxjCi-uJNln2',
-    database: process.env.DB_NAME,// || 'd5lbv0kvnr1mnv',
-    // url: process.env.DB_URL,
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    port: process.env.DB_PORT,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
     ssl: true,
     schema: true
   }
