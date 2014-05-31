@@ -25,6 +25,7 @@ module.exports = {
           });
         }
         return res.send(200, {
+          session: req.session.id,
           message: 'Authenticated'
         });
       });
