@@ -60,6 +60,10 @@ module.exports = {
     meetings: {
       collection: 'meeting',
       via: 'owner'
+    },
+    contacts: {
+      collection: 'contact',
+      via: 'owner'
     }
   },
 

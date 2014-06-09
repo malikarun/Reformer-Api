@@ -19,6 +19,7 @@ module.exports = {
         return;
       }
       return req.logIn(user, function(err) {
+        var current_user = user;
         if (err) {
           return res.send(500, {
             message: 'Something wend wrong'
