@@ -14,7 +14,11 @@ module.exports = {
 
     owner: {
       model: 'user'
-    }
+    },
+
+    idea: {
+      model: 'idea'
+    },
 
   }
 };
