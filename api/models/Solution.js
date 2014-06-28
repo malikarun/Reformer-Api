@@ -14,11 +14,7 @@ module.exports = {
 
     owner: {
       model: 'user'
-    },
-
-    problem: {
-      model: 'problem'
-    },
+    }
   }
 };
 

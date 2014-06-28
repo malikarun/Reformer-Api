@@ -14,12 +14,7 @@ module.exports = {
 
     owner: {
       model: 'user'
-    },
-
-    discussion: {
-      collection: 'discussion',
-      via: 'idea'
-    },
+    }
   }
 };
 
