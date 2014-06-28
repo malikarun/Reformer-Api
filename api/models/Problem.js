@@ -18,7 +18,7 @@ module.exports = {
 
     solution: {
       collection: 'solution',
-      via: 'idea'
+      via: 'Problem'
     },
   }
 };
