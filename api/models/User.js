@@ -9,13 +9,16 @@
 module.exports = {
 
   attributes: require('waterlock').models.user.attributes({
-    
+
     /* e.g.
     nickname: 'string'
     */
-    
+
+    first_name: 'string',
+    last_name: 'string'
+
   }),
-  
+
   beforeCreate: require('waterlock').models.user.beforeCreate,
   beforeUpdate: require('waterlock').models.user.beforeUpdate
 };
