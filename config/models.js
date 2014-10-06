@@ -19,6 +19,7 @@ module.exports.models = {
   ***************************************************************************/
   // connection: 'localDiskDb',
   connection: 'herokuPostgresqlServer',
+  // connection: 'localMysqlServer',
 
   /***************************************************************************
   *                                                                          *
@@ -29,5 +30,4 @@ module.exports.models = {
   *                                                                          *
   ***************************************************************************/
   migrate: 'alter'
-
 };
