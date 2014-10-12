@@ -1,24 +1,22 @@
-/**
- * User
- *
- * @module      :: Model
- * @description :: This is the base user model
- * @docs        :: http://waterlock.ninja/documentation
- */
-
 module.exports = {
+  attributes: {
 
-  attributes: require('waterlock').models.user.attributes({
+    id: { type: 'integer', primaryKey: true, autoIncrement: true },
 
-    /* e.g.
-    nickname: 'string'
-    */
+//    first_name: { type: 'string', required: true },
 
-    first_name: 'string',
-    last_name: 'string'
+//    last_name: { type: 'string', required: true },
 
-  }),
+    username: { type: 'string', unique: true },
 
-  beforeCreate: require('waterlock').models.user.beforeCreate,
-  beforeUpdate: require('waterlock').models.user.beforeUpdate
+    email: { type: 'email',  unique: true, required: true },
+
+    passports: { collection: 'Passport', via: 'user' },
+
+    likes: { collection: 'like', via: 'user' },
+
+    posts: { collection: 'post', via: 'user' },
+
+    company: { model: 'company' }
+  }
 };

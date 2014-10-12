@@ -1,3 +1,3 @@
-# myGov
+# PierApi
 
 a [Sails](http://sailsjs.org) application
