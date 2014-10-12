@@ -3,9 +3,9 @@ module.exports = {
 
     id: { type: 'integer', primaryKey: true, autoIncrement: true },
 
-//    first_name: { type: 'string', required: true },
+    first_name: { type: 'string'},
 
-//    last_name: { type: 'string', required: true },
+    last_name: { type: 'string'},
 
     username: { type: 'string', unique: true },
 
@@ -13,10 +13,5 @@ module.exports = {
 
     passports: { collection: 'Passport', via: 'user' },
 
-    likes: { collection: 'like', via: 'user' },
-
-    posts: { collection: 'post', via: 'user' },
-
-    company: { model: 'company' }
   }
 };

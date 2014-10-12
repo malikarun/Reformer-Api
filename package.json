@@ -28,6 +28,7 @@
     "sails": "~0.10.5",
     "sails-disk": "~0.10.0",
     "sails-mysql": "^0.10.6",
+    "sails-postgresql": "^0.10.9",
     "validator": "^3.19.1",
     "waterlock": "0.0.13",
     "waterlock-local-auth": "0.0.5"
